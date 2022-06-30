@@ -24,7 +24,7 @@
         <td><%= friend.twitter %></td>
         <td><%= link_to 'Show', friend %></td>
         <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
-       <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Destroy', friend, method: :delete, :onclick => "return confirm('Are you sure you want to delete this post?')", class:"btn btn-danger" %></td>
     <% end %>
   </tbody>
 </table>
