@@ -1,48 +1,27 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-<div class="navbar-brand">
-<div class="row">
-<div class="col-sm">
-  <%= link_to 'Amazon', root_path, class:"navbar-brand" %>
-  </div> 
-  </div>
-</div>
 
-  <div class="container-fluid" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
+<nav class="navbar-expand-lg navbar-nav navbar-dark bg-dark">
     <div class="row">
-    <div class="col-lg">
-      <li class="nav-item">
-      <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
-       
-      </li>
+      <div class="col-sm-1">
+        <%= link_to 'Amazon' , root_path, class:"navbar-brand" %>
+      </div>
+      <div class="col-sm-1">
+        <%= link_to 'Account' , root_path, class:"navbar-brand" %>
+      </div>
+      <div class="col-sm-1">
+        <%= link_to "Sign Up" , new_user_registration_path, class:"nav-link" %>
+      </div>
+      <div class="col">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" </form>
+        </form>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </div>
     </div>
     </div>
-  <div class="container center">
-  <div class="row">
-  <div class="col-10">
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    
   </div>
-  <div class="col">
-      <button class="btn btn-outline-success my-2" type="submit">Search</button>
+    </div>
   </div>
-  </div>
-  </div> 
-
-
-    </form>
-  </div>
-</div>
 </nav>

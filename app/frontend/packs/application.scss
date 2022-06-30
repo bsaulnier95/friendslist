@@ -3,30 +3,31 @@ h1 {
   text-transform: uppercase;
 }  
 
-.navbar-brand {
-  margin-left: 10px;
-}
-
 .right{
-  margin-right: 260px
+  margin-right: 300px
 }
 .left {
-  margin-left: 25px;
-}
-.nav-link {
-
-  display: block;  
+  margin-left: 600px;
 }
 
-
-
-.nav-item {   overflow: auto;
+.nav-item { overflow: auto;
   white-space: nowrap; }
-
 
 .center {
   text-align: center;
 }
+.wrapper {
+  position: flex;
 
+}
+.no-space {
+margin-left: 0px;
+margin-right: 0px;
+justify-content: center
+}
+.Width
+{
+    width: 100%;
+}
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";  
