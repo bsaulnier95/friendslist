@@ -1,27 +1,37 @@
-
 <nav class="navbar-expand-lg navbar-nav navbar-dark bg-dark">
-    <div class="row">
-      <div class="col-sm-1">
-        <%= link_to 'Amazon' , root_path, class:"navbar-brand" %>
-      </div>
-      <div class="col-sm-1">
-        <%= link_to 'Account' , root_path, class:"navbar-brand" %>
-      </div>
-      <div class="col-sm-1">
-        <%= link_to "Sign Up" , new_user_registration_path, class:"nav-link" %>
-      </div>
-      <div class="col">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" </form>
-        </form>
-      </div>
-      <div class="col-sm-2">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </div>
+  <div class="row">
+    <div class="col-sm-1 left">
+      <%= link_to 'Amazon' , root_path, class:"navbar-brand" %>
     </div>
-    </div>
-    
+    <% if user_signed_in? %>
+      <div class="col-sm-1">
+        <%= link_to "Sign Out" , destroy_user_session_path, method: :delete, class:"nav-link" %>
+      </div>
+      <div class="col-sm-1">
+        <%= link_to "Edit Profile" , edit_user_registration_path, class:"nav-link" %>
+      </div>
+      <% else %>
+        <div class="col-sm-1">
+          <%= link_to "Sign In" , new_user_session_path, class:"nav-link" %>
+        </div>
+        <div class="col-sm-1">
+          <%= link_to 'Sign Up' , new_user_registration_path, class:"nav-link" %>
+        </div>
+
+        <% end %>
+
+          <div class="col">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" </form>
+            </form>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
   </div>
-    </div>
+  </div>
+
+  </div>
+  </div>
   </div>
 </nav>
