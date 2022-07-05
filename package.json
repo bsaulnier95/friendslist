@@ -10,13 +10,13 @@
     "bootstrap": "5.0.0-beta2",
     "turbolinks": "^5.2.0"
   },
-  
+
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.9.2"
   },
   
-  {
+  
     "name": "example-app",
     "description": "a really cool app",
     "version": "1.0.0",
@@ -25,4 +25,3 @@
     }
   }
   
-}
