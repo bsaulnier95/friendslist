@@ -23,5 +23,11 @@
   "description": "a really cool app",
   "engines": {
     "npm": "8.x"
-  }
+  },
+
+"resolutions": {
+  "@babel/core": "7.15.0",
+  "@babel/preset-env": "7.15.0"
+}
+
 }
