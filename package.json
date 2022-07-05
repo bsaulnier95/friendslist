@@ -1,7 +1,8 @@
 {
-  "name": "friendslist",
+  "name": "example-app",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
     "@popperjs/core": "^2.0.0-alpha.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -10,27 +11,21 @@
     "bootstrap": "5.0.0-beta2",
     "turbolinks": "^5.2.0"
   },
-
-  "version": "0.1.0",
+  "version": "0.0.1",
   "devDependencies": {
     "webpack-dev-server": "^4.9.2"
   },
-  
-  
-    "name": "example-app",
-    "description": "a really cool app",
-    "version": "0.0.1",
-    "engines": {
-      "node": "16.x"
-    },
-
-    
-      "name": "example-app",
-      "description": "a really cool app",
-      "version": "0.0.1",
-      "engines": {
-        "npm": "8.x"
-      }
+  "description": "a really cool app",
+  "engines": {
+    "npm": "8.x"
+  },
+  "babel": {
+    "presets": [
+      "./node_modules/@rails/webpacker/package/babel/preset.js"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
+    ]
+  }
 }
-
-  
