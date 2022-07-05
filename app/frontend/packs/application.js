@@ -8,7 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("webpack-cli")
-
+require("babel-loader")
+require("@babel/preset-env")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
