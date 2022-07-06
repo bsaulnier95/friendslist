@@ -13,7 +13,6 @@ module.exports = function(api) {
         JSON.stringify(currentEnv) +
         '.'
     )
-    
   }
 
   return {
