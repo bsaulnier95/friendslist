@@ -84,7 +84,7 @@ test:
   public_output_path: packs-test
 
 production:
-extract_css: false 
+  extract_css: false 
   <<: *default
 
   # Production depends on precompilation of packs prior to booting for performance.
