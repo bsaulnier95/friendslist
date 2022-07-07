@@ -31,10 +31,7 @@
   "engines": {
     "npm": "8.x"
   },
-  "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
-  },
+  
   "resolutions": {
     "@babel/core": "7.15.0",
     "@babel/preset-env": "7.15.0"
