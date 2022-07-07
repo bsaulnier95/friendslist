@@ -27,14 +27,12 @@
     "webpack-config": "^7.5.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "description": "a really cool app",
-  "engines": {
-    "npm": "8.x"
-  },
+
   
   "resolutions": {
     "@babel/core": "7.15.0",
     "@babel/preset-env": "7.15.0"
   },
+  
   "postinstall": "npm rebuild node-sass"
 }
