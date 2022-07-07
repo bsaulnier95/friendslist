@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 import '../js/bootstrap_js_files.js'  
 import 'core-js/stable'
+import 'core-js/es/array'
 import 'regenerator-runtime/runtime'
 require("@rails/ujs").start()
 require("turbolinks").start()
