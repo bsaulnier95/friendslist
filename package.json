@@ -18,6 +18,7 @@
     "bootstrap": "5.0.0-beta2",
     "core-js": "^3.23.3",
     "node": "^18.4.0",
+    "storybook": "^6.5.9",
     "turbolinks": "^5.2.0",
     "webpack": "2.1.0-beta.22",
     "webpack-cli": "^4.10.0",
