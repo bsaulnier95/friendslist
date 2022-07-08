@@ -3,6 +3,8 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 import '../js/bootstrap_js_files.js'  
+import 'bootstrap'
+import './src/application.scss'
 import 'core-js/stable'
 import 'core-js/es/array'
 import 'regenerator-runtime/runtime'
