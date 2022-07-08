@@ -8,7 +8,7 @@ import './src/application.scss'
 import 'core-js/stable'
 import 'core-js/es/array'
 import 'regenerator-runtime/runtime'
-import "./style.scss";
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
